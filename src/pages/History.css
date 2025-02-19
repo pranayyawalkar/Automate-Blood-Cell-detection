@@ -1,0 +1,158 @@
+/* History Page Styles */
+.history-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background: #eef2f7;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Page Title */
+  .history-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Search Bar Container */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Search Input */
+  .search-input {
+    width: 100%;
+    padding: 12px 45px 12px 20px; /* Left padding for text, right for icon */
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search Input Focus */
+  .search-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Search Icon */
+  .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* History Table */
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .history-table th,
+  .history-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .history-table th {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .history-table tbody tr {
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .history-table tbody tr:hover {
+    background: #f8f9fc;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .view-btn,
+  .delete-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.9rem;
+  }
+  
+  .view-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .view-btn:hover {
+    background: #218838;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  
+  /* No History Message */
+  .no-history {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Floating Animated Effect */
+  @keyframes floatUp {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .history-container, .search-container, .history-table {
+    animation: floatUp 0.6s ease-out;
+  }
+  
